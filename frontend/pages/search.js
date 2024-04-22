@@ -18,7 +18,7 @@ const InputWrapper = styled.div`
   top:68px;
   margin: 25px 0;
   padding: 5px 0;
-  background-color: #eeeeeeaa;
+  background-color: eeeeeeaa;
 `;
 
 export default function SearchPage() {

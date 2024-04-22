@@ -3,28 +3,28 @@ import styled from "styled-components";
 const StyledOrder = styled.div`
   margin: 10px 0;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid ddd;
   display: flex;
   gap: 20px;
   align-items: center;
   time{
     font-size: 1rem;
-    color: #555;
+    color: 555;
   }
 `;
 const ProductRow = styled.div`
   span{
-    color:#aaa;
+    color:aaa;
   }
 `;
 const Address = styled.div`
   font-size:.8rem;
   line-height:1rem;
   margin-top: 5px;
-  color:#888;
+  color:888;
 `;
 
-export default function SingleOrder({line_items,createdAt,...rest}) {
+export default function SingleOrder({ line_items, createdAt, ...rest }) {
   return (
     <StyledOrder>
       <div>

@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
 import Title from "@/components/Title";
 import Center from "@/components/Center";
-import {Category} from "@/models/Category";
-import {Product} from "@/models/Product";
+import { Category } from "@/models/Category";
+import { Product } from "@/models/Product";
 import ProductsGrid from "@/components/ProductsGrid";
 import styled from "styled-components";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Spinner from "@/components/Spinner";
 
@@ -22,36 +22,36 @@ const FiltersWrapper = styled.div`
   gap: 15px;
 `;
 const Filter = styled.div`
-  background-color: #ddd;
+  background-color: ddd;
   padding: 5px 10px;
   border-radius: 5px;
   display: flex;
   gap: 5px;
-  color:#444;
+  color:444;
   select{
     background-color:transparent;
     border:0;
     font-size:inherit;
-    color:#444;
+    color:444;
   }
 `;
 
 export default function CategoryPage({
-  category,subCategories,products:originalProducts
+  category, subCategories, products: originalProducts
 }) {
   const defaultSorting = '_id-desc';
   const defaultFilterValues = category.properties
-    .map(p => ({name:p.name,value:'all'}));
-  const [products,setProducts] = useState(originalProducts);
-  const [filtersValues,setFiltersValues] = useState(defaultFilterValues);
-  const [sort,setSort] = useState(defaultSorting);
-  const [loadingProducts,setLoadingProducts] = useState(false);
-  const [filtersChanged,setFiltersChanged] = useState(false);
+    .map(p => ({ name: p.name, value: 'all' }));
+  const [products, setProducts] = useState(originalProducts);
+  const [filtersValues, setFiltersValues] = useState(defaultFilterValues);
+  const [sort, setSort] = useState(defaultSorting);
+  const [loadingProducts, setLoadingProducts] = useState(false);
+  const [filtersChanged, setFiltersChanged] = useState(false);
 
   function handleFilterChange(filterName, filterValue) {
     setFiltersValues(prev => {
       return prev.map(p => ({
-        name:p.name,
+        name: p.name,
         value: p.name === filterName ? filterValue : p.value,
       }));
     });
@@ -133,11 +133,11 @@ export default function CategoryPage({
 
 export async function getServerSideProps(context) {
   const category = await Category.findById(context.query.id);
-  const subCategories = await Category.find({parent:category._id});
+  const subCategories = await Category.find({ parent: category._id });
   const catIds = [category._id, ...subCategories.map(c => c._id)];
-  const products = await Product.find({category:catIds});
+  const products = await Product.find({ category: catIds });
   return {
-    props:{
+    props: {
       category: JSON.parse(JSON.stringify(category)),
       subCategories: JSON.parse(JSON.stringify(subCategories)),
       products: JSON.parse(JSON.stringify(products)),

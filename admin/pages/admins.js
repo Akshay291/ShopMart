@@ -34,7 +34,7 @@ function AdminsPage({ swal }) {
       showCancelButton: true,
       cancelButtonText: 'Cancel',
       confirmButtonText: 'Yes, Delete!',
-      confirmButtonColor: '#d55',
+      confirmButtonColor: 'd55',
       reverseButtons: true,
     }).then(async result => {
       if (result.isConfirmed) {

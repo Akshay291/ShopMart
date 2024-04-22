@@ -31,7 +31,7 @@ const CategoryTitle = styled.div`
     margin-top: 10px;
   }
   a{
-    color:#555;
+    color:555;
     display: inline-block;
   }
 `;
@@ -40,13 +40,13 @@ const CategoryWrapper = styled.div`
 `;
 
 const ShowAllSquare = styled(Link)`
-  background-color: #ddd;
+  background-color: ddd;
   height: 160px;
   border-radius: 10px;
   align-items:center;
   display: flex;
   justify-content: center;
-  color: #555;
+  color: 555;
   text-decoration: none;
 `;
 

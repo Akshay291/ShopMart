@@ -28,19 +28,19 @@ const ColsWrapper = styled.div`
 `;
 const ReviewWrapper = styled.div`
   margin-bottom: 10px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid eee;
   padding: 10px 0;
   h3{
     margin:3px 0;
     font-size:1rem;
-    color:#333;
+    color:333;
     font-weight: normal;
   }
   p{
     margin:0;
     font-size: .7rem;
     line-height: 1rem;
-    color:#555;
+    color:555;
   }
 `;
 const ReviewHeader = styled.div`
@@ -48,7 +48,7 @@ const ReviewHeader = styled.div`
   justify-content: space-between;
   time{
     font-size: 12px;
-    color: #aaa;
+    color: aaa;
   }
 `;
 

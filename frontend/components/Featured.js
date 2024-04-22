@@ -6,8 +6,8 @@ import FlyingButton from "@/components/FlyingButton";
 import { RevealWrapper } from 'next-reveal'
 
 const Bg = styled.div`
-  background-color: #222;
-  color: #fff;
+  background-color: 222;
+  color: fff;
   padding: 50px 0;
 `;
 const Title = styled.h1`
@@ -19,7 +19,7 @@ const Title = styled.h1`
   }
 `;
 const Desc = styled.p`
-  color: #aaa;
+  color: aaa;
   font-size: .8rem;
 `;
 const ColumnsWrapper = styled.div`

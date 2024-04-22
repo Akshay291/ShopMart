@@ -1,4 +1,4 @@
-import {BounceLoader} from "react-spinners";
+import { BounceLoader } from "react-spinners";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -11,10 +11,10 @@ const Wrapper = styled.div`
   `}
 `;
 
-export default function Spinner({fullWidth}) {
+export default function Spinner({ fullWidth }) {
   return (
     <Wrapper fullWidth={fullWidth}>
-      <BounceLoader speedMultiplier={3} color={'#555'} />
+      <BounceLoader speedMultiplier={3} color={'555'} />
     </Wrapper>
   );
 }

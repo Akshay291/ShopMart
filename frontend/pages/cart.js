@@ -40,7 +40,7 @@ const ColumnsWrapper = styled.div`
 `;
 
 const Box = styled.div`
-  background-color: #fff;
+  background-color: fff;
   border-radius: 10px;
   padding: 30px;
 `;

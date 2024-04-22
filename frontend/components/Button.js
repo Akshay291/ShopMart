@@ -21,27 +21,27 @@ export const ButtonStyle = css`
     width: 100%;
   `}
   ${props => props.white && !props.outline && css`
-    background-color: #fff;
-    color: #000;
+    background-color: fff;
+    color: 000;
   `}
   ${props => props.white && props.outline && css`
     background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    color: fff;
+    border: 1px solid fff;
   `}
   ${props => props.black && !props.outline && css`
-    background-color: #000;
-    color: #fff;
+    background-color: 000;
+    color: fff;
   `}
   ${props => props.black && props.outline && css`
     background-color: transparent;
-    color: #000;
-    border: 1px solid #000;
+    color: 000;
+    border: 1px solid 000;
   `}
   ${props => props.primary && !props.outline && css`
     background-color: ${primary};
     border: 1px solid ${primary};
-    color:#fff;
+    color:fff;
   `}
   ${props => props.primary && props.outline && css`
     background-color: transparent;

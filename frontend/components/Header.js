@@ -7,13 +7,13 @@ import BarsIcon from "@/components/icons/Bars";
 import SearchIcon from "@/components/icons/SearchIcon";
 
 const StyledHeader = styled.header`
-  background-color: #222;
+  background-color: 222;
   position:sticky;
   top:0;
   z-index:10;
 `;
 const Logo = styled(Link)`
-  color:#fff;
+  color:fff;
   text-decoration:none;
   position: relative;
   z-index: 3;
@@ -36,7 +36,7 @@ const StyledNav = styled.nav`
   left: 0;
   right: 0;
   padding: 70px 20px 20px;
-  background-color: #222;
+  background-color: 222;
   @media screen and (min-width: 768px) {
     display: flex;
     position: static;
@@ -45,7 +45,7 @@ const StyledNav = styled.nav`
 `;
 const NavLink = styled(Link)`
   display: block;
-  color:#aaa;
+  color:aaa;
   text-decoration:none;
   min-width:30px;
   padding: 10px 0;
