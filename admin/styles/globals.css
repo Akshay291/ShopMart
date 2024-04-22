@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  max-height: 100%;
+}
+
+input,
+textarea,
+select {
+  @apply border-2 border-blue-900 rounded-lg w-full py-2 px-3;
+  @apply mb-2;
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+  @apply border-2 border-blue-900;
+}
+
+h1 {
+  @apply text-blue-900 mb-4 text-xl;
+}
+
+h2 {
+  @apply text-gray-800 mt-6 mb-2 text-lg;
+}
+
+label {
+  @apply text-blue-700 font-medium text-base;
+}
+
+.btn-primary {
+  @apply text-white rounded-lg shadow-sm bg-blue-900 p-3 font-semibold;
+}
+
+table.basic {
+  @apply w-full border-blue-900 border;
+}
+
+table.basic thead tr td,
+table.basic thead tr th {
+  @apply bg-blue-200 text-blue-900 px-4 py-1 border-blue-900 border;
+}
+
+table.basic tr td {
+  @apply px-4 py-1 text-center border-blue-900 border;
+}
+
+table.basic a {
+  @apply px-4 inline-flex mx-1 items-center gap-1 text-sm py-1 bg-blue-900 text-white rounded-lg;
+}
+
+.btn-default,
+.btn-red {
+  @apply rounded-md;
+}
+
+.btn-red {
+  @apply bg-blue-900 text-white px-4 py-1 rounded-lg shadow-sm;
+}
+
+.btn-default {
+  @apply bg-blue-900 text-white rounded-lg px-4 py-1 border border-gray-200 shadow-sm;
+}
+
+label {
+  @apply text-blue-900 font-semibold text-lg;
+}
+
+h1 {
+  @apply text-blue-900 text-3xl uppercase font-semibold;
+}
+
+h2 {
+  @apply text-blue-900 text-base font-semibold;
+}
+
+h3 {
+  @apply text-blue-900 text-base font-semibold;
+}
